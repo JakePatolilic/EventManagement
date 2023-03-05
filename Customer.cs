@@ -8,7 +8,7 @@ namespace EventManagement
 {
     public class Customer
     {
-        public string? Name { get; set; }
+        public string? Name { get; private set; }
         public int TotalPpl { get; set; }
         public int Money { get; set; }
         public int RentTime { get; set; }

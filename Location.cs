@@ -11,8 +11,6 @@ namespace EventManagement
             public string? Name { get; private set; }
             public int RentPrice { get; protected set; }
             public Availability Availability;
-           // public DateTime Date { get; set; }
-            
 
             public Location(string Name, int RentPrice, Availability Availability)
             {
@@ -20,6 +18,7 @@ namespace EventManagement
                 this.RentPrice = RentPrice;
                 this.Availability = Availability;
             }
+
             public override string ToString()
             {
                 return "Name of Place: " + Name + "\n" + "Rent Price: " + RentPrice + "\n" + "\n" + "Status: " + Availability;
