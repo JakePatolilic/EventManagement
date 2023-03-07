@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace EventManagement
 {
-    public class Customer
+    public class Customer : User
     {
-        public string? Name { get; private set; }
         public int TotalPpl { get; set; }
         public int Money { get; set; }
         public int RentTime { get; set; }
+        public Manager? managers { get; set; }
 
-        public Customer(string Name, int TotalPpl, int Money, int RentTime)
+        public Customer(string Name, string Email, int TotalPpl, int Money, int RentTime): base(Name, Email)
         {
-            this.Name = Name;
             this.TotalPpl = TotalPpl;
             this.Money = Money;
             this.RentTime = RentTime;
+            this.managers = managers;
         }
     }
 }

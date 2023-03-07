@@ -22,7 +22,7 @@ namespace EventManagement
 
         public void ComputePrice(Customer c)
         {
-            Customer customer = new Customer("", 0, 0, 0);
+            Customer customer = new Customer("", "", 0, 0, 0);
             base.RentPrice = (this.CottageNum * this.CottagePrice) + (this.EntranceFee * customer.TotalPpl);
         }
     }
